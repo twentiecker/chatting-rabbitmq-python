@@ -4,8 +4,8 @@
 
 Projects ini dibuat dengan menggunakan <b>PyCharm</b>. Untuk melakukan setup project cukup lakukan clone pada menu Git>
 Clone pada aplikasi PyCharm yang anda gunakan. Kemudian masukkan link URL yang ada pada
-tombol <button style="background-color:#2ea043; border:2px solid #2ea043; border-radius: 5px; color: white">
-Code</button> atau pada link di bawah ini.
+tombol <span><button style="background-color:#2ea043; border:2px solid #2ea043; border-radius: 5px; color: white">
+Code</button></span> atau pada link di bawah ini.
 
 ```
 https://github.com/twentiecker/chatting-rabbitmq-python.git
@@ -29,25 +29,3 @@ pip install pyinstaller
 Library ini digunakan untuk membuat executable file dari file python yang sudah kita buat. <br/><br>
 Dokumentasi lengkap mengenai library <b>pyinstaller</b> dapat dilihat pada link
 berikut: https://pyinstaller.org/en/stable/
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
