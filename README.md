@@ -2,10 +2,9 @@
 
 ## Setup Projects
 
-Projects ini dibuat dengan menggunakan <b>PyCharm</b>. Untuk melakukan setup project cukup lakukan clone pada menu Git>
-Clone pada aplikasi PyCharm yang anda gunakan. Kemudian masukkan link URL yang ada pada
-tombol <span><button style="background-color:#2ea043; border:2px solid #2ea043; border-radius: 5px; color: white">
-Code</button></span> atau pada link di bawah ini.
+Projects ini dibuat dengan menggunakan <b>PyCharm</b>. Untuk melakukan setup project cukup lakukan clone pada
+menu <code>Git > Clone</code> pada aplikasi <b>PyCharm</b> yang anda gunakan. Kemudian masukkan link URL yang ada di
+bawah ini.
 
 ```
 https://github.com/twentiecker/chatting-rabbitmq-python.git
