@@ -6,6 +6,7 @@ def callback(ch, method, properties, body):
     ch.basic_ack(delivery_tag=method.delivery_tag)  # mempertahankan pesan di rabbitMQ walaupun receiver meninggoy
 
 
+input("Tekan [enter] untuk inisialisasi RMQ parameters.")
 credential = pika.PlainCredentials('TMDG2022', 'TMDG2022')
 connection = pika.BlockingConnection(pika.ConnectionParameters(
     host='rmq2.pptik.id',
@@ -13,7 +14,14 @@ connection = pika.BlockingConnection(pika.ConnectionParameters(
     virtual_host='/TMDG2022',
     credentials=credential
 ))
+print(">> Inisialisasi RMQ parameters berhasil!!")
+print("=============================================================")
+
+input("Tekan [enter] untuk membuka koneksi ke RMQ.")
 channel = connection.channel()
+print(">> Koneksi ke RMQ berhasil dibuka!!")
+print("=============================================================")
+
 print("Masukkan nama queue channel untuk menerima pesan melalui RMQ.")
 queue_name = input(">> channel: ")
 channel.queue_declare(
@@ -28,5 +36,5 @@ channel.basic_consume(
     on_message_callback=callback  # memanggil fungsi callback
 )
 
-print('Menunggu pesan masuk...')
+print('Menunggu pesan masuk... (CTRL+C to close)')
 channel.start_consuming()  # bersifat standby
