@@ -21,7 +21,7 @@ sedangkan Consumer berperan sebagai penerima pesan. Aplikasi demo berada pada fo
 pip install pika
 ```
 
-Library ini digunakan untuk melakukan komunikasi dengan RabbitMQ melalui protocol <b>AMQP 0-9-1</b>. <br/><br/>
+Library ini digunakan untuk melakukan komunikasi dengan RabbitMQ melalui protocol <b>AMQP 0-9-1</b>. <br/>
 Dokumentasi lengkap mengenai library <b>pika</b> dapat dilihat pada link berikut: https://pika.readthedocs.io/en/stable/
 
 ## Setup PyInstaller libraries
@@ -30,6 +30,6 @@ Dokumentasi lengkap mengenai library <b>pika</b> dapat dilihat pada link berikut
 pip install pyinstaller
 ```
 
-Library ini digunakan untuk membuat executable file dari file python yang sudah kita buat. <br/><br>
+Library ini digunakan untuk membuat executable file dari file python yang sudah kita buat. <br/>
 Dokumentasi lengkap mengenai library <b>pyinstaller</b> dapat dilihat pada link
 berikut: https://pyinstaller.org/en/stable/
