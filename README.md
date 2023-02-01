@@ -12,7 +12,7 @@ https://github.com/twentiecker/chatting-rabbitmq-python.git
 
 ## Demo Aplikasi
 
-Aplikasi ini menghasilkan dua aplikasi, yaitu consumer.exe dan publisher.exe. Publisher berperan sebagai pengirim pesan
+Aplikasi ini menghasilkan dua aplikasi, yaitu consumer.exe dan producer.exe. Producer berperan sebagai pengirim pesan
 sedangkan Consumer berperan sebagai penerima pesan. Aplikasi demo berada pada folder <code>dist/</code>.
 
 ## Setup RabbitMQ libraries
