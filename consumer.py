@@ -1,4 +1,8 @@
 import pika
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def callback(ch, method, properties, body):
@@ -7,11 +11,11 @@ def callback(ch, method, properties, body):
 
 
 input("Tekan [enter] untuk inisialisasi RMQ parameters.")
-credential = pika.PlainCredentials('TMDG2022', 'TMDG2022')
+credential = pika.PlainCredentials(os.getenv("user"), os.getenv("pass"))
 connection = pika.BlockingConnection(pika.ConnectionParameters(
-    host='rmq2.pptik.id',
-    port=5672,
-    virtual_host='/TMDG2022',
+    host=os.getenv("host"),
+    port=int(os.getenv("port")),
+    virtual_host=os.getenv("vhost"),
     credentials=credential
 ))
 print(">> Inisialisasi RMQ parameters berhasil!!")
